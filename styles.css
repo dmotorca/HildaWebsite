@@ -1,0 +1,109 @@
+body,
+html {
+  margin: 0;
+  background-color: white;
+}
+
+.logo-container {
+  padding-top: 5%;
+  background-color: white;
+}
+
+#location_text {
+  text-decoration: underline;
+}
+
+#time_text {
+  color: white;
+}
+
+#clock_png {
+  height: 2%;
+  width: 2%;
+}
+.navbar {
+  background-color: #eab676;
+}
+.navbar a {
+  color: white;
+}
+.navbar a:hover,
+.navbar a:active,
+.navbar a:visited {
+  color: white;
+}
+
+.menu-container {
+  color: black;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px;
+  grid-template-areas: 'starter-container main-container dessert-container';
+}
+
+.starter-container,
+.main-container,
+.dessert-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.starter-container {
+  grid-area: starter-container;
+}
+
+.main-container {
+  padding-top: 25%;
+  grid-area: main-container;
+}
+
+.dessert-container {
+  grid-area: dessert-container;
+}
+
+.starter-img,
+.main-img,
+.dessert-img {
+}
+
+.meet-mamma {
+  padding: 3%;
+  color: black;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px;
+  grid-template-areas: 'meet_text headshot';
+}
+
+.food-showcase {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #eab676;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1%;
+  grid-template-areas:
+    'food_1 food_2 food_3 food_4'
+    'food_5 food_6 food_7 food_8';
+}
+.food-showcase img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.headshot {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
