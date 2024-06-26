@@ -20,19 +20,64 @@
       <img src="images/mamma-khouris-logo.png" alt="Logo" class="logo" />
     </div>
 
+    <!--Navbar -->
     <nav class="navbar fixed-top">
       <div class="container-fluid">
-        <a href="#" id="location_text" class="navbar-brand" onclick="openMap()"
+        <a class="navbar-nav" id="time_text"
+          >Sunday: closed mon-sat: 11AM–9PM
+        </a>
+
+        <a class="navbar-nav" id="phoneNumber">(971) 373-8904</a>
+        <a class="ourMenuText" href="#menu-container">Our menu</a>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="cater.html">Cater with us!</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Reserve a table</a></li>
+            <li>
+              <a class="dropdown-item" href="#icon-showcase">Order Takeout</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#meet-mamma-container"
+                >Our Story</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <a class="navbar-nav" href="#" id="location_text" onclick="openMap()"
           >3808 N. WILLIAMS AVE. #123</a
         >
-        <img src="images/clock.png" id="clock_png" />
-        <a id="time_text">MON-SAT: 11AM – 9PM SUNDAY: CLOSED</a>
-        <a class="navbar-brand" href="#">HOME</a>
-        <a class="navbar-brand" href="#menu-container">OUR MENU</a>
       </div>
     </nav>
+    <!--Navbar -->
 
-    <div class="meet-mamma">
+    <!--Food Collage-->
+    <div class="food-showcase">
+      <img src="images/food_1.jpg" />
+      <img src="images/food_2.jpg" />
+      <img src="images/food_3.png" />
+      <img src="images/food_4.jpg" />
+      <img src="images/food_5.jpg" />
+      <img src="images/food_6.jpg" />
+      <img src="images/food_7.jpg" />
+      <img src="images/food_8.jpg" />
+    </div>
+    <!--Food Collage-->
+
+    <!--Meet Mamma Bio-->
+    <div class="meet-mamma" id="meet-mamma-container">
       <p class="meet_text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
         placeat fuga totam mollitia ipsa officiis omnis veritatis autem nostrum
@@ -71,6 +116,9 @@
       </p>
       <img class="headshot" src="images/headshot.jpg" id="headshot_img" />
     </div>
+    <!--Meet Mamma Bio-->
+
+    <!--Menus-->
     <div class="menu-container" id="menu-container">
       <div class="starter-container">
         <a href="starter.html">
@@ -93,17 +141,17 @@
         <p>Desserts & Drinks</p>
       </div>
     </div>
+    <!--Menus-->
 
-    <div class="food-showcase">
-      <img src="images/food_1.jpg" />
-      <img src="images/food_2.jpg" />
-      <img src="images/food_3.png" />
-      <img src="images/food_4.jpg" />
-      <img src="images/food_5.jpg" />
-      <img src="images/food_6.jpg" />
-      <img src="images/food_7.jpg" />
-      <img src="images/food_8.jpg" />
+    <!--Food Ordering Icons-->
+    <div class="icon-showcase" id="icon-showcase">
+      <img src="images/clover.png" />
+      <img src="images/uberEats.png" />
+      <img src="images/grubhub.png" />
+      <img src="images/slice.png" />
+      <img src="images/doordash.png" />
     </div>
+    <!--Food Ordering Icons-->
 
     <script src="/script.js"></script>
     <script

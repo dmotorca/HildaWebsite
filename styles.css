@@ -9,6 +9,28 @@ html {
   background-color: white;
 }
 
+li {
+  list-style-type: none;
+}
+
+.ourMenuText {
+  text-decoration: underline;
+  font-size: x-large;
+  font-weight: bold;
+}
+.navbar .dropdown-menu {
+  background-color: lavender; /* Change background color to black */
+  list-style-type: none; /* Remove bullet points */
+  text-decoration: none;
+}
+
+.navbar .dropdown-item,
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: lavender; /* Change background color on hover */
+  color: black; /* Ensure text color remains white on hover */
+}
+
 #location_text {
   text-decoration: underline;
 }
@@ -21,15 +43,20 @@ html {
   height: 2%;
   width: 2%;
 }
+
+.navbar-nav {
+  text-decoration: none;
+}
 .navbar {
   background-color: #eab676;
 }
+
 .navbar a {
   color: white;
 }
+
 .navbar a:hover,
-.navbar a:active,
-.navbar a:visited {
+.navbar a:focus {
   color: white;
 }
 
@@ -95,6 +122,7 @@ html {
     'food_1 food_2 food_3 food_4'
     'food_5 food_6 food_7 food_8';
 }
+
 .food-showcase img {
   height: 100%;
   width: 100%;
@@ -106,4 +134,22 @@ html {
   height: 90%;
   width: 100%;
   object-fit: cover;
+}
+
+.icon-showcase {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #eab676;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1%;
+  grid-template-areas: 'clover uberEats grubhub slice doordash';
+}
+
+.icon-showcase img {
+  height: 100%;
+  width: 100%;
 }
