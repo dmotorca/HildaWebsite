@@ -61,40 +61,21 @@ li {
 }
 
 .menu-container {
+  outline: red;
   color: black;
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px;
-  grid-template-areas: 'starter-container main-container dessert-container';
+  grid-template-areas: 'fake_dessert fake_dinner fake_lunch ';
 }
 
-.starter-container,
-.main-container,
-.dessert-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.starter-container {
-  grid-area: starter-container;
-}
-
-.main-container {
-  padding-top: 25%;
-  grid-area: main-container;
-}
-
-.dessert-container {
-  grid-area: dessert-container;
-}
-
-.starter-img,
-.main-img,
-.dessert-img {
+.menu-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .meet-mamma {
@@ -152,4 +133,61 @@ li {
 .icon-showcase img {
   height: 100%;
   width: 100%;
+}
+
+/* Media Queries for Phone Screens */
+@media (max-width: 768px) {
+  #mamma_logo {
+    padding-top: 10%;
+    height: 100%;
+    width: 90%;
+  }
+
+  .ourMenuText {
+    font-size: large;
+  }
+  .navbar {
+    flex: auto;
+    flex-wrap: nowrap;
+  }
+  .navbar-nav {
+    flex: auto;
+    flex-wrap: nowrap;
+  }
+  .nav-item {
+    flex: auto;
+    flex-wrap: nowrap;
+  }
+  .navbar a {
+    flex: auto;
+    color: white;
+    font-size: xx-small;
+  }
+
+  .meet-mamma {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      'meet_text'
+      'headshot';
+  }
+
+  .food-showcase {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      'food_1 food_2'
+      'food_3 food_4'
+      'food_5 food_6'
+      'food_7 food_8';
+  }
+
+  .icon-showcase {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'clover uberEats'
+      'grubhub slice'
+      'doordash .';
+  }
 }

@@ -1,4 +1,4 @@
-//Function to See if the user is scrolling down
+// Function to See if the user is scrolling down
 let scrollLast = 0;
 window.addEventListener('scroll', function () {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -38,3 +38,26 @@ function openMap() {
   // Trigger the link
   link.click();
 }
+
+// Screen Size Media Queries
+
+// Navbar Change
+document.addEventListener('DOMContentLoaded', function () {
+  function updateNavbarText() {
+    const timeText = document.getElementById('time_text');
+    const phoneNumber = document.getElementById('phoneNumber');
+
+    if (window.innerWidth <= 768) {
+      timeText.textContent = 'Mon-Sat 11AM-9PM';
+      phoneNumber.innerHTML =
+        '<a href="tel"9713738904"><img src="images/phone_icon.png" alt="Phone Icon to call Mamma Khouris" style="height: 15px; width: 15px;">';
+    } else {
+      timeText.textContent = 'Mon-Sat 11:00AM-9:00 PM';
+      phoneNumber.textContent = '123-456-7890';
+    }
+  }
+
+  updateNavbarText();
+
+  window.addEventListener('resize', updateNavbarText);
+});

@@ -17,21 +17,27 @@
 
   <body>
     <div class="logo-container text-center">
-      <img src="images/mamma-khouris-logo.png" alt="Logo" class="logo" />
+      <img
+        src="images/mamma-khouris-logo.png"
+        id="mamma_logo"
+        alt="Logo"
+        class="logo"
+      />
     </div>
 
     <!--Navbar -->
     <nav class="navbar fixed-top">
       <div class="container-fluid">
         <a class="navbar-nav" id="time_text"
-          >Sunday: closed mon-sat: 11AM–9PM
+          >Sunday: Closed Mon-Sat: 11AM–9PM
         </a>
 
         <a class="navbar-nav" id="phoneNumber">(971) 373-8904</a>
-        <a class="ourMenuText" href="#menu-container">Our menu</a>
+        <a class="ourMenuText" id="menuText" href="#menu-container">Menu</a>
 
         <li class="nav-item dropdown">
           <a
+            id="services"
             class="nav-link dropdown-toggle"
             href="#"
             role="button"
@@ -42,21 +48,31 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="cater.html">Cater with us!</a>
-            </li>
-            <li><a class="dropdown-item" href="#">Reserve a table</a></li>
-            <li>
-              <a class="dropdown-item" href="#icon-showcase">Order Takeout</a>
+              <a class="dropdown-item" id="caterWithUs" href="cater.html"
+                >Cater with us!</a
+              >
             </li>
             <li>
-              <a class="dropdown-item" href="#meet-mamma-container"
+              <a class="dropdown-item" id="reserveTable" href="#"
+                >Reserve a table</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" id="orderTakeout" href="#icon-showcase"
+                >Order Takeout</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                id="ourStory"
+                href="#meet-mamma-container"
                 >Our Story</a
               >
             </li>
           </ul>
         </li>
-
-        <a class="navbar-nav" href="#" id="location_text" onclick="openMap()"
+        <a class="navbar-nav" id="location_text" onclick="openMap()"
           >3808 N. WILLIAMS AVE. #123</a
         >
       </div>
@@ -77,28 +93,12 @@
     <!--Food Collage-->
 
     <!--Menus-->
-    <div class="menu-container" id="menu-container">
-      <div class="starter-container">
-        <a href="starter.html">
-          <img src="images/fake_lunch.jpg" class="starter-img" />
-        </a>
-        <p>Starters</p>
-      </div>
-
-      <div class="main-container">
-        <a href="main.html">
-          <img src="images/fake_dinner.jpg" class="main-img" />
-        </a>
-        <p>Main</p>
-      </div>
-
-      <div class="dessert-container">
-        <a href="dessert_drinks.html">
-          <img src="images/fake_dessert.jpg" class="dessert-img" />
-        </a>
-        <p>Desserts & Drinks</p>
-      </div>
+    <div class="menu-container">
+      <img src="images/fake_dessert.jpg" />
+      <img src="images/fake_dinner.jpg" />
+      <img src="images/fake_lunch.jpg" />
     </div>
+
     <!--Menus-->
 
     <!--Meet Mamma Bio-->
@@ -153,7 +153,7 @@
     </div>
     <!--Food Ordering Icons-->
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
