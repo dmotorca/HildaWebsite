@@ -68,7 +68,7 @@ li {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px;
-  grid-template-areas: 'fake_dessert fake_dinner fake_lunch ';
+  grid-template-areas: 'fake_dessert fake_dinner fake_lunch';
 }
 
 .menu-container img {
@@ -189,5 +189,18 @@ li {
       'clover uberEats'
       'grubhub slice'
       'doordash .';
+  }
+
+  .menu-container {
+    outline: red;
+    color: black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    grid-template-areas:
+      'fake_dessert fake_dinner fake_lunch'
+      'Dessert Dinner Lunch';
   }
 }
