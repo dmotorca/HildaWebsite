@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth <= 768) {
       timeText.textContent = 'Mon-Sat 11AM-9PM';
       phoneNumber.innerHTML =
-        '<a href="tel"9713738904"><img src="images/phone_icon.png" alt="Phone Icon to call Mamma Khouris" style="height: 15px; width: 15px;">';
+        '<a href="tel:9713738904"><img src="images/phone_icon.png" alt="Phone Icon to call Mamma Khouris" style="height: 15px; width: 15px;">';
     } else {
       timeText.textContent = 'Mon-Sat 11:00AM-9:00 PM';
-      phoneNumber.textContent = '123-456-7890';
+      phoneNumber.textContent = '9713638904';
     }
   }
 
