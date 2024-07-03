@@ -14,29 +14,20 @@ window.addEventListener('scroll', function () {
 });
 
 function openMap() {
-  // Coordinates for Mamma Khouri's
-  var lat = 45.551;
-  var lng = -122.666;
+  const address = '3808 N. WILLIAMS AVE. #123';
+  const encodedAddress = encodeURIComponent(address);
 
-  // Construct the geo: URI for mobile devices
-  var geoUri = `geo:${lat},${lng}?q=${lat},${lng}(Mamma+Khouri's)`;
+  // Detect the user agent to determine if the user is on an iPhone or not
+  const isIOS =
+    /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-  // Construct the Google Maps URL for fallback
-  var mapsUrl =
-    'https://www.google.com/maps/dir/?api=1&destination=3808+N+Williams+Ave,+Portland,+OR+97227';
+  // Construct the appropriate URL
+  const url = isIOS
+    ? `http://maps.apple.com/?q=${encodedAddress}`
+    : `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
 
-  // Create a temporary link element
-  var link = document.createElement('a');
-
-  // Set the link's href based on device
-  if (/Mobi|Android/i.test(navigator.userAgent)) {
-    link.href = geoUri;
-  } else {
-    link.href = mapsUrl;
-  }
-
-  // Trigger the link
-  link.click();
+  // Open the map application
+  window.location.href = url;
 }
 
 // Screen Size Media Queries
