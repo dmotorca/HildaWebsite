@@ -197,10 +197,8 @@ li {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px;
-    grid-template-areas:
-      'fake_dessert fake_dinner fake_lunch'
-      'Dessert Dinner Lunch';
+    grid-template-areas: 'fake_dessert fake_dinner fake_lunch';
   }
 }
