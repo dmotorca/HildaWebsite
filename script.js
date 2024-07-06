@@ -33,6 +33,8 @@ function openMap() {
 // Screen Size Media Queries
 
 // Navbar Change
+/*
+
 document.addEventListener('DOMContentLoaded', function () {
   function updateNavbarText() {
     const timeText = document.getElementById('time_text');
@@ -43,7 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+
   updateNavbarText();
 
   window.addEventListener('resize', updateNavbarText);
 });
+*/
