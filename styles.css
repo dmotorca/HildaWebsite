@@ -1,8 +1,8 @@
-body,
-html {
+body {
   margin: 0;
-  font-family: Quicksand;
-  background-color: #eab676;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .logo-container {
@@ -19,25 +19,14 @@ li {
   font-size: x-large;
   font-weight: bold;
 }
-.navbar .dropdown-menu {
-  padding-left: 10%;
-  background-color: white; /* Change background color to black */
-  list-style-type: none; /* Remove bullet points */
-  text-decoration: none;
-}
 
 .timeTextLogo {
+  font-weight: bold;
   text-align: center;
   font-size: 1em;
   font-family: Quicksand;
+  padding-top: 2%;
   padding-bottom: 5%;
-}
-
-.navbar .dropdown-item,
-.navbar .dropdown-item:hover,
-.navbar .dropdown-item:focus {
-  background-color: white; /* Change background color on hover */
-  color: black; /* Ensure text color remains white on hover */
 }
 
 #location_text {
@@ -56,6 +45,7 @@ li {
 .navbar-nav {
   text-decoration: none;
 }
+
 .navbar {
   background-color: #eab676;
 }
@@ -138,8 +128,39 @@ li {
   width: 100%;
 }
 
+/* Ensure the button spans the default width */
+.dropdown .btn {
+  width: auto;
+}
+
+.dropdown {
+  padding-bottom: 30%;
+}
+
+/* Remove padding and margin from the dropdown menu */
+.dropdown-menu {
+  margin: 0;
+  width: 100vw;
+  border-radius: 0;
+  padding-bottom: 10%;
+  border-style: none;
+}
+
+/* Ensure the dropdown items span full width */
+.dropdown-item {
+  padding: 0.5rem 1rem; /* Adjust these values as needed */
+  width: 100vw;
+  box-sizing: border-box;
+  border-style: none;
+}
+
 /* Media Queries for Phone Screens */
 @media (max-width: 768px) {
+  body {
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
   #mamma_logo {
     padding-top: 10%;
     height: 100%;
@@ -151,22 +172,16 @@ li {
   }
   .navbar {
     flex: auto;
-    flex-wrap: nowrap;
   }
   .navbar-nav {
     flex: auto;
-    flex-wrap: nowrap;
   }
-  .nav-item {
-    flex: auto;
-    flex-wrap: nowrap;
-  }
+
   .navbar a {
     flex: auto;
     color: white;
     font-size: xx-small;
   }
-
   .meet-mamma {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -192,6 +207,11 @@ li {
       'clover uberEats'
       'grubhub slice'
       'doordash .';
+  }
+
+  .dropdown-menu.show {
+    display: block;
+    border: none;
   }
 
   .menu-container {
