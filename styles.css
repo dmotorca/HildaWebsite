@@ -132,28 +132,6 @@ li {
 .dropdown .btn {
   width: auto;
 }
-
-.dropdown {
-  padding-bottom: 30%;
-}
-
-/* Remove padding and margin from the dropdown menu */
-.dropdown-menu {
-  margin: 0;
-  width: 100vw;
-  border-radius: 0;
-  padding-bottom: 10%;
-  border-style: none;
-}
-
-/* Ensure the dropdown items span full width */
-.dropdown-item {
-  padding: 0.5rem 1rem; /* Adjust these values as needed */
-  width: 100vw;
-  box-sizing: border-box;
-  border-style: none;
-}
-
 /* Media Queries for Phone Screens */
 @media (max-width: 768px) {
   body {
@@ -161,6 +139,31 @@ li {
     left: 0;
     right: 0;
   }
+
+  .dropdown {
+    background-color: #eab676;
+  }
+
+  /* Remove padding and margin from the dropdown menu */
+  .dropdown-menu {
+    margin: 0;
+    width: 100vw;
+
+    transition-property: transform;
+    transition-duration: 2.5s;
+    transition-timing-function: ease;
+    transition: 0s;
+  }
+
+  .dropdown-menu.show {
+    transform: translateY(-20px);
+    display: block;
+    border: none;
+    border-radius: 0;
+    background-color: #eab676;
+  }
+
+  /* Ensure the dropdown items span full width */
   #mamma_logo {
     padding-top: 10%;
     height: 100%;
@@ -182,6 +185,7 @@ li {
     color: white;
     font-size: xx-small;
   }
+
   .meet-mamma {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -209,11 +213,7 @@ li {
       'doordash .';
   }
 
-  .dropdown-menu.show {
-    display: block;
-    border: none;
-  }
-
+  /* This is what shows up for dropdown menu text*/
   .menu-container {
     color: black;
     background-color: #eab676;
@@ -229,3 +229,40 @@ li {
     padding-right: 1%;
   }
 }
+/*TAKEOUT CSS */
+
+#takeoutBodyID {
+  background-color: #eab676;
+}
+
+.takeoutAndDelivery {
+  font-size: 2em;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'takeout'
+    'delivery';
+}
+
+.takeoutAndDelivery .dropdown {
+  margin: 10px 0;
+}
+
+.takeoutAndDelivery .dropdown-menu {
+  width: 100%;
+  text-align: center;
+}
+
+.takeoutAndDelivery .dropdown-toggle::after {
+  margin-left: 5px;
+}
+
+/* Additional styling to keep dropdowns centered and ensure full width for items */
+.takeoutAndDelivery .dropdown-menu .dropdown-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*TAKEOUT CSS */
