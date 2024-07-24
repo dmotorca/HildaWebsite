@@ -239,11 +239,17 @@ li {
   font-size: 2em;
   display: grid;
   text-align: center;
+  row-gap: 20%; /* Temporary until I add animations */
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
     'takeout'
     'delivery';
+}
+
+.deliveryText {
+  text-decoration: none;
+  color: black;
 }
 
 .takeoutAndDelivery .dropdown {
@@ -252,6 +258,7 @@ li {
 
 .takeoutAndDelivery .dropdown-menu {
   width: 100%;
+
   text-align: center;
 }
 
@@ -263,6 +270,20 @@ li {
 .takeoutAndDelivery .dropdown-menu .dropdown-item {
   width: 100%;
   box-sizing: border-box;
+  color: white;
+}
+/*TAKEOUT CSS */
+
+/*LOCATION CSS */
+
+.locationContainer {
+  font-size: 2em;
+  display: grid;
+  text-align: center;
+  row-gap: 20%; /* Temporary until I add animations */
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'map location';
 }
 
-/*TAKEOUT CSS */
+/*LOCATION CSS */
