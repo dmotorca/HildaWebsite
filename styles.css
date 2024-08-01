@@ -150,14 +150,11 @@ li {
       'food_5 food_6'
       'food_7 food_8';
   }
-
-  .icon-showcase {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      'clover uberEats'
-      'grubhub slice'
-      'doordash .';
+  .food-showcase img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
   }
 }
 /*TAKEOUT CSS */
