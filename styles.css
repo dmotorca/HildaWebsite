@@ -5,6 +5,14 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+.timeTextLogo {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  font-family: Quicksand;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
 .logo-container {
   padding-top: 5%;
   background-color: white;
@@ -14,32 +22,8 @@ li {
   list-style-type: none;
 }
 
-.ourMenuText {
-  text-decoration: underline;
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.timeTextLogo {
-  font-weight: bold;
-  text-align: center;
-  font-size: 1em;
-  font-family: Quicksand;
-  padding-top: 2%;
-  padding-bottom: 5%;
-}
-
 #location_text {
   text-decoration: underline;
-}
-
-#time_text {
-  color: white;
-}
-
-#clock_png {
-  height: 2%;
-  width: 2%;
 }
 
 .navbar-nav {
@@ -57,24 +41,6 @@ li {
 .navbar a:hover,
 .navbar a:focus {
   color: white;
-}
-
-.menu-container {
-  outline: red;
-  color: black;
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px;
-  grid-template-areas: 'fake_dessert fake_dinner fake_lunch';
-}
-
-.menu-container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .meet-mamma {
@@ -97,35 +63,10 @@ li {
     'food_5 food_6 food_7 food_8';
 }
 
-.food-showcase img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .headshot {
   height: 90%;
   width: 100%;
   object-fit: cover;
-}
-
-.icon-showcase {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 1%;
-  padding-right: 1%;
-  background-color: #eab676;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 1%;
-  grid-template-areas: 'clover uberEats grubhub slice doordash';
-}
-
-.icon-showcase img {
-  height: 100%;
-  width: 100%;
 }
 
 /* Ensure the button spans the default width */
@@ -167,9 +108,9 @@ li {
 
   /* Ensure the dropdown items span full width */
   #mamma_logo {
-    padding-top: 10%;
     height: 100%;
-    width: 90%;
+    width: 95%;
+    padding-bottom: 3%;
   }
 
   .ourMenuText {
@@ -218,22 +159,6 @@ li {
       'grubhub slice'
       'doordash .';
   }
-
-  /* This is what shows up for dropdown menu text*/
-  .menu-container {
-    color: black;
-    background-color: #eab676;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 2%;
-    grid-template-areas: 'fake_dessert fake_dinner fake_lunch';
-    padding-bottom: 10%;
-    padding-top: 10%;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
 }
 /*TAKEOUT CSS */
 
@@ -245,7 +170,7 @@ li {
   font-size: 2em;
   display: grid;
   text-align: center;
-  row-gap: 20%; /* Temporary until I add animations */
+  row-gap: 40%; /* Temporary until I add animations */
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
@@ -258,7 +183,14 @@ li {
   color: black;
 }
 
-.takeoutAndDelivery .dropdown {
+.dropdown-takeout {
+  background-color: #b47e3c;
+}
+
+.dropdown-delivery {
+  background-color: #b47e3c;
+}
+.takeoutAndDelivery .dropdown-takeout {
   margin: 10px 0;
 }
 
@@ -292,3 +224,49 @@ li {
 }
 
 /*LOCATION CSS */
+
+/*RESERVATION CSS */
+#mamma_logo-reservation {
+  padding-top: 5%;
+  height: 100%;
+  width: 90%;
+  padding-bottom: 3%;
+}
+.reservation-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    'Reservations'
+    'ReservationsText'
+    'PhoneNumber';
+}
+
+#phoneNumberReservation {
+  color: black;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/*RESERVATION CSS */
+
+/*MENU CSS */
+.menu-container {
+  outline: red;
+  color: black;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'MenuText'
+    'ImagePDF';
+}
+
+#menuImage {
+  height: 40vh;
+  width: 80vw;
+}
+
+/*MENU CSS */
