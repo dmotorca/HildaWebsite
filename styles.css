@@ -133,7 +133,7 @@ li {
   width: auto;
 }
 /* Media Queries for Phone Screens */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   body {
     margin: 0;
     left: 0;
@@ -142,6 +142,8 @@ li {
 
   .dropdown {
     background-color: #eab676;
+    width: 100vw;
+    height: 7vh;
   }
 
   /* Remove padding and margin from the dropdown menu */
@@ -190,8 +192,12 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
-      'meet_text'
+      'meet-text'
       'headshot';
+  }
+
+  .meet-text {
+    font-size: 1em;
   }
 
   .food-showcase {
@@ -258,7 +264,6 @@ li {
 
 .takeoutAndDelivery .dropdown-menu {
   width: 100%;
-
   text-align: center;
 }
 
